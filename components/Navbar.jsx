@@ -15,10 +15,7 @@ export default function Navbar() {
     "Stats",
     "Clients",
     "Accredian_Edge",
-    "CAT",
-    "How It Works",
-    "FAQs",
-    "Testimonials",
+    
   ];
 
   const getHref = (link) => {
