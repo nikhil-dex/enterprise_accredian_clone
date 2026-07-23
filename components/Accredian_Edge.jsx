@@ -81,7 +81,7 @@ export default function Accredian_Edge() {
   return (
     <section
       id="Accredian_Edge"
-      className="py-24 px-4 bg-black text-white"
+      className="py-24 px-4 bg-black text-white height-[100vh]"
     >
       <div className="max-w-7xl mx-auto">
         {/* Heading */}

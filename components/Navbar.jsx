@@ -2,10 +2,13 @@
 "use client";
 
 import { useState } from "react";
-
+import Enquiry from "@/components/EnquiryForm";
 export default function Navbar() {
   const [hovered, setHovered] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenForm, setIsOpenForm] = useState(false);
+
+
 
   const links = [
     "Home",
@@ -23,14 +26,12 @@ export default function Navbar() {
   };
 
   return (
+    <>
     <nav className="sticky top-0 z-50 bg-white lg:bg-black/80 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
             
          
-
-          {/* Desktop Links */}
-          <div className="hidden lg:flex items-center gap-2 ml-1">
              {/* Logo */}
           <a
             href="/"
@@ -38,6 +39,9 @@ export default function Navbar() {
           >
             Accredian
           </a>
+
+          {/* Desktop Links */}
+          <div className="hidden lg:flex items-center gap-2 ml-1">
             {links.map((link) => (
               <a
                 key={link}
@@ -57,7 +61,26 @@ export default function Navbar() {
             ))}
           </div>
 
-          <button className="btn border border-black hover:border-white text-black hover:text-white bg-white hover:bg-black font-semibold py-1 px-2 rounded transition duration-300">
+          <button 
+          className="
+hidden
+md:block
+border
+border-black
+hover:border-white
+text-black
+hover:text-white
+bg-white
+hover:bg-black
+font-semibold
+py-1
+px-2
+rounded
+transition
+duration-300
+"
+          onClick={() => setIsOpenForm(true)}
+          >
             Enquiry Now
             </button> 
 
@@ -87,5 +110,19 @@ export default function Navbar() {
         </div>
       )}
     </nav>
+{
+    isOpenForm && (
+        <div
+            className="fixed inset-0 bg-black/50 z-40"
+            onClick={() => setIsOpenForm(false)}
+        />
+    )
+}
+
+<Enquiry
+    isOpenForm={isOpenForm}
+    setIsOpenForm={setIsOpenForm}
+/>
+    </>
   );
 }
