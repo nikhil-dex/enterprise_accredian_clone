@@ -33,10 +33,10 @@ export default function Footer() {
     </div>
     </div>
     <div className="flex flex-col justify-center items-center gap-2">  
-        <button className="btn border border-white hover:border-black text-white hover:text-black hover:bg-white font-semibold py-2 px-4 rounded transition duration-300">
-            Enquiry Now
-            </button> 
-            <p className="text-[11px]">Speak with our Advisor</p>
+        <a href="#Home" className="btn border border-white hover:border-black text-white hover:text-black hover:bg-white font-semibold py-2 px-4 rounded transition duration-300">
+           Speak with our Advisor
+            </a> 
+            
     
   
     </div>
