@@ -1,4 +1,4 @@
-![snake](https://raw.githubusercontent.com/nikhil-dex/nikhil-dex/output/snake.svg)
+
 
 ### Accredian Enterprise Landing Page Clone
 
