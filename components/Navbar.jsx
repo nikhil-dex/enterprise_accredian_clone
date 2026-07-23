@@ -11,7 +11,7 @@ export default function Navbar() {
     "Home",
     "Stats",
     "Clients",
-    "Accredian Edge",
+    "Accredian_Edge",
     "CAT",
     "How It Works",
     "FAQs",

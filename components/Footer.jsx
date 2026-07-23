@@ -21,7 +21,7 @@ export default function Footer() {
     
     <section
     id="footer"
-    className="bg-black text-white py-10 px-4 sm:px-6 lg:px-10 pb-4"
+    className="bg-black text-white py-10 px-4 sm:px-6 lg:px-10 pb-4 pt-30"
     >
         <div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -68,7 +68,7 @@ export default function Footer() {
  
 
     {/* Social Media */}
-    <div className="flex items-center gap-5 text-xl">
+    <div className="flex items-center gap-5 text-xl mt-1">
       <a href="https://www.facebook.com/accredianlearn" className="hover:scale-110 transition">
         <FaFacebook />
       </a>
