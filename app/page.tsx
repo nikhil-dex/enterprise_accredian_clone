@@ -8,7 +8,8 @@ import Accredian_Edge from "@/components/Accredian_Edge";
 export default function Home() {
   return (
     <>
- 
+    <main>
+
 
       <Navbar />
       <Hero/>
@@ -17,6 +18,7 @@ export default function Home() {
       <Accredian_Edge/>
 
       <Footer/>
+    </main>
 
     </>
   );
