@@ -31,7 +31,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
             
-         
+         <div className="flex items-center gap-8">
              {/* Logo */}
           <a
             href="/"
@@ -60,39 +60,52 @@ export default function Navbar() {
               </a>
             ))}
           </div>
+          </div>
+               <button
+    onClick={() =>
+        setIsOpenForm(true)
+    }
+    className="
+        hidden
+        lg:block
+        border
+        border-white
+        lg:border-black
+        text-black
+        hover:text-white
+        lg:text-black
+        px-3
+        py-2
+        rounded-lg
+        bg-white
+        hover:bg-black
+        hover:border-white
+       
+        transition
+    "
+>
+    Enquiry Now
+</button>
 
-          <button 
-          className="
-hidden
-md:block
-border
-border-black
-hover:border-white
-text-black
-hover:text-white
-bg-white
-hover:bg-black
-font-semibold
-py-1
-px-2
-rounded
-transition
-duration-300
-"
-          onClick={() => setIsOpenForm(true)}
-          >
-            Enquiry Now
-            </button> 
+
 
           {/* Mobile Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="ml-auto lg:hidden text-3xl text-black"
+            className="
+    ml-auto
+    lg:hidden
+    text-3xl
+    text-black
+    hover:scale-110
+    transition
+"
           >
             {isOpen ? "✕" : "☰"}
           </button>
         </div>
       </div>
+ 
 
       {/* Mobile Menu */}
       {isOpen && (
@@ -107,6 +120,29 @@ duration-300
               {link}
             </a>
           ))}
+                  <button
+            onClick={() => {
+                setIsOpen(false);
+                setIsOpenForm(true);
+            }}
+            className="
+            border
+            border-t
+            
+              block
+    w-full
+    px-6
+    py-4
+    text-left
+    text-3xl
+    font-semibold
+    text-gray-700
+    hover:bg-black
+    transition
+            "
+        >
+            Enquiry Now
+        </button>
         </div>
       )}
     </nav>

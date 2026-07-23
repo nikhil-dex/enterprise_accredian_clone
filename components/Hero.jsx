@@ -63,7 +63,8 @@ tl
 
 <section
   id="Home"
-  className="h-screen flex items-center overflow-hidden"
+  className="min-h-[calc(100vh-64px)]
+        pt-16 h-screen flex items-center overflow-hidden"
 >
   <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
