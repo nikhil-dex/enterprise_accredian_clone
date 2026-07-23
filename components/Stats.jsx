@@ -25,7 +25,7 @@ export default function Stats() {
   return (
     <section
       id="Stats"
-      className="py-24 px-4 bg-white text-black"
+      className="py-24 px-4 bg-black text-white border-b border-white"
     >
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
@@ -86,6 +86,8 @@ export default function Stats() {
     </motion.div>
 ))}
         </div>
+
+
       </div>
     </section>
   );

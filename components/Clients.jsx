@@ -25,7 +25,7 @@ export default function Clients() {
   return (
     <section
       id="Clients"
-      className="py-24 px-4 bg-white text-black"
+      className="py-24 px-4 text-white"
     >
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
